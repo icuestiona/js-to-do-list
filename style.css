@@ -1,0 +1,20 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.display-1 {
+  color: #343a40;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 50%;
+  margin-right: 10px;
+}
