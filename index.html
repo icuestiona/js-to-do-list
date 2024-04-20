@@ -18,7 +18,7 @@
     <title>To-Do List JS</title>
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar sticky-top bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -26,14 +26,14 @@
             alt="Logo"
             width="60"
             height="54"
-            class="d-inline-block align-text-top"
+            class="d-inline-block align-middle"
           />
           To Do List
         </a>
       </div>
     </nav>
     <div class="container">
-      <h1 class="display-1 text-center mt-5">Keep track of your tasks</h1>
+      <h1 class="display-1 text-center mt-5 mb-5">Keep track of your tasks</h1>
       <form class="todo-form">
         <input
           type="text"
@@ -41,10 +41,69 @@
           class="form-control"
           placeholder="Add a task..."
         />
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="unique">
+          Submit
+        </button>
       </form>
       <ul id="todo-list" class="list-group mt-5"></ul>
     </div>
-    <script src="script.js"></script>
+    <footer>
+      <div class="container-footer">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Time Management</h5>
+              <br />
+              <p style="max-width: 550px">
+                Using a to-do list and practicing time management can have
+                numerous benefits for productivity, mental health, and overall
+                quality of life. By organizing tasks and deadlines, a to-do list
+                can help individuals focus on what's most important and avoid
+                procrastination.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Themes</h5>
+              <ul class="list-unstyled">
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Planning</a>
+                </li>
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Prioritazation</a>
+                </li>
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Goal setting</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">See more</h5>
+              <ul class="list-unstyled">
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Delegation</a>
+                </li>
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Techniques</a>
+                </li>
+                <li class="text-truncate">
+                  <a href="#!" class="text-decoration-none">Evaluation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-decoration-none" href="https://todolist.com/"
+          >todolist.com</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
