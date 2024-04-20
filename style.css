@@ -5,7 +5,9 @@
 }
 
 .display-1 {
-  color: #343a40;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #0f4881;
 }
 
 .todo-form {
@@ -17,4 +19,73 @@
 .form-control {
   width: 50%;
   margin-right: 10px;
+}
+
+#unique {
+  background-color: tomato;
+  border-color: tomato;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+}
+
+Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fafbfb;
+  border-top: 1px solid #ddeaed;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.container-footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-lg-6,
+.col-md-12,
+.col-sm-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+footer h5 {
+  font-size: 1.2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer li {
+  padding: 0 0.5rem;
+}
+
+footer input[type="text"] {
+  width: 100%;
+  margin-bottom: 1rem;
 }
